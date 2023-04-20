@@ -1,0 +1,17 @@
+@use './scss/abstract/vars';
+
+.top-nav-link{
+    display: block;
+    color: #a9ada9;
+    text-decoration: none;
+}
+
+/*color letras nav-bar*/
+.top-nav-link:hover{
+    opacity: 100%;
+    color: #ff9800;
+}
+
+/*------------------------------------*/
+
+/*Color de los textos*/
