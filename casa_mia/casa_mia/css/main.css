@@ -9,3 +9,9 @@
 .card {
     height: 100%;
 }
+
+.carrusel {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}

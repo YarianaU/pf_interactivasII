@@ -10,7 +10,7 @@
     .mobile-bar{
         display: block;
         width: 100%;
-        background: #386641;
+        background: #839d2b;
     }
     
     .mobile-icon{
@@ -38,7 +38,7 @@
         margin-top: 0 !important;
         visibility: hidden;
         border-radius:0;
-        background:  #A7C957;
+        background:  #839d2b;
         z-index: 1200; 
         overflow-y: scroll;
         overflow-x: hidden;
@@ -54,7 +54,7 @@
     .nav-front{
         position: relative;
         z-index: 5;
-        background: #A7C957;
+        background: #839d2b;
     }
 }
 /* Medium devices (tablets, less than 992px) */
