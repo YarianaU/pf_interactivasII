@@ -12,6 +12,13 @@
      background: #F8F8F8;
  }
 
+ .logo {
+     font-family: Libre Bodoni;
+     color: white;
+     font-size: 28px;
+     margin: 5px 41px 5px 30px;
+ }
+
  /* layout */
  .container {
      width: 1140px;
@@ -131,6 +138,10 @@
      background-color: #839d2b;
  }
 
+ .card {
+     height: 100%;
+ }
+
  /*------------------------------------*/
 
  .spacing {
@@ -167,11 +178,21 @@
      display: flex;
  }
 
+ .carousel {
+     width: 70%;
+     margin: auto;
+     margin-top: 5rem;
+ }
+
  .carousel-inner {
      position: relative;
      width: 100%;
-     height: 28rem;
+     height: 40rem;
      overflow: hidden;
+ }
+
+ .carousel-item {
+     height: inherit;
  }
 
  .total-size {
@@ -272,11 +293,28 @@
      color: white;
  }
 
+ .text-shadow {
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+ }
+
+ .stretched-link {
+     text-decoration: underline;
+     margin-bottom: 10px;
+     /* cursor: pointer;
+     width: fit-content;
+     margin: auto; */
+ }
+
  .card-container {
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
      align-items: center;
+     background: #716C67;
+     opacity: 80%;
+     box-shadow: 0 5px 3px rgba(0, 0, 0, 0.4);
+     margin: 1rem 3rem;
+     border-radius: 12px;
  }
 
  .card {
@@ -286,6 +324,18 @@
      background-color: #f2f2f2;
      border-radius: 8px;
      text-align: center;
+ }
+
+ .btn-containers{
+    z-index: 999;
+ }
+
+ .card-button {
+     background: #839D2B;
+     border: none;
+     padding: 0 12px;
+     color: white;
+     border-radius: 10px;
  }
 
  .image-container {
@@ -300,7 +350,7 @@
      height: 100%;
      object-fit: cover;
      border-radius: 8px;
-     border: 5px solid green;
+     border: 5px solid #839d2b;
      position: absolute;
      top: 0;
      left: 0;
