@@ -287,7 +287,7 @@
   <footer class="top-nav container-fluid footer">
     <div class="row footer-contacts ">
 
-      <ul class="text-center center-information d-flex justify-content-between w-50 m-auto mt-5">
+      <ul class="text-center center-information d-xl-flex d-md-block justify-content-between w-50 m-auto mt-5">
         <li class="invisible-point mb-3 "><a class="footer-text contact-text color-w fs-5" href="#">Sobre nosotros</a></li>
         <li class="invisible-point mb-3 "><a class="footer-text contact-text color-w fs-5" href="#">Ayuda</a></li>
         <li class="invisible-point mb-3 "><a class="footer-text contact-text color-w fs-5" href="#">Desarrolladores</a></li>
@@ -312,16 +312,16 @@
         <div class="modal-body">
           <button class="color-orange close-button" data-bs-dismiss="modal" aria-label="Close">X</button>
           <div class="d-flex">
-            <div>
-              <img class="recipe-img" src="./img/salmon.jpg" alt="">
-            </div>
-            <div class="recipe-data">
-              <span>Preparación: <span>25 min</span></span>
-              <span>Cocción: <span>10 min</span></span>
-              <span>Tiempo Total: <span>35 min</span></span>
-              <span>Porciones: <span>3 porciones</span></span>
-              <span>Dificultad: <span>Facíl</span></span>
-              <span>Destacada: <span>Si</span></span>
+            <img class="img-fluid" src="./img/salmon.jpg" alt="">
+            <div class="p-3 d-block">
+              <ul class="p-0 d-grid">
+                <span>Preparación: <span>25 min</span></span>
+                <span>Cocción: <span>10 min</span></span>
+                <span>Tiempo Total: <span>35 min</span></span>
+                <span>Porciones: <span>3 porciones</span></span>
+                <span>Dificultad: <span>Facíl</span></span>
+                <span>Destacada: <span>Si</span></span>
+              </ul>
               <hr class="w-100">
               <div class="d-flex justify-content-between">
                 <span class="fs-5 color-green">Almuerzo</span>
@@ -331,7 +331,25 @@
           </div>
           <div>
             <h2>Pasta en salsa de queso</h2>
+            <h4 class="color-green">Descripción</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate, suscipit labore ab modi assumenda,
+              architecto atque dolores nostrum magnam consectetur quae velit?
+              Vero nisi iure animi repellendus rerum voluptates quo.</p>
+            <h4 class="color-green">Ingredientes</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate, suscipit labore ab modi assumenda,
+              architecto atque dolores nostrum magnam consectetur quae velit?
+              Vero nisi iure animi repellendus rerum voluptates quo.</p>
+            <h4 class="color-green">Instrucciones</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate, suscipit labore ab modi assumenda,
+              architecto atque dolores nostrum magnam consectetur quae velit?
+              Vero nisi iure animi repellendus rerum voluptates quo.</p>
           </div>
+          <button class="border-0 bg-white float-end" id="like">
+            <span>❤</span> 35
+          </button>
         </div>
       </div>
     </div>
