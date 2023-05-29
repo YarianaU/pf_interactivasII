@@ -49,8 +49,8 @@
           <li class="top-nav-item"><a class="nav-link top-nav-link top-nav-item" aria-current="page" href="#">Contacto</a></li>
         </ul>
         <div>
-          <button class="header-button bg-orange">REGISTRO</button>
-          <button class="header-button bg-olive">INGRESO</button>
+          <button class="header-button bg-orange" data-bs-toggle="modal" data-bs-target="#registerModal">REGISTRO</button>
+          <button class="header-button bg-olive" data-bs-toggle="modal" data-bs-target="#loginModal">INGRESO</button>
         </div>
       </div>
       <!--  responsive part -->
@@ -355,6 +355,61 @@
     </div>
   </div>
   <!-- Modal recetas -->
+
+  <!-- Modal registro -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="color-orange close-button" data-bs-dismiss="modal" aria-label="Close">X</button>
+          <h2 class="color-orange text-decoration-underline">Registro de usuario</h2>
+          <p class="fs-5 text-center mx-5">Si usted no tiene una cuenta dentro de la página solo siga los siguientes pasos pero si ya tiene una cuenta presione el botón de ingreso </p>
+          <form action="" class="d-grid">
+            <label for="nombre" class="color-green fs-5 mb-3">Nombre:</label>
+            <div class="d-flex mb-3">
+              <input type="text" class="bg-input-orange border-0 p-2 me-2 w-100" placeholder="Primer nombre">
+              <input type="text" class="bg-input-orange border-0 p-2 ms-2 w-100" placeholder="Apellidos">
+            </div>
+            <label for="correo" class="color-green fs-5 mb-3">Correo:</label>
+            <input type="email" class="bg-input-grey border-0 p-2 mb-3" placeholder="Correo">
+            <label for="Contraseña" class="color-green fs-5 mb-3">Correo:</label>
+            <input type="password" class="bg-input-orange border-0 p-2 w-50 mb-3" placeholder="Contraseña">
+            <label for="Contraseña" class="color-green fs-5 mb-3">Repetir contraseña:</label>
+            <input type="password" class="bg-input-grey border-0 p-2 mb-3 w-50" placeholder="Contraseña">
+            <div class="d-flex justify-content-center mt-5">
+              <button class="border-0 rounded p-2 px-4 text-white bg-orange me-2">Aceptar</button>
+              <button class="border-0 rounded p-2 px-4 text-white bg-olive ms-2" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal registro -->
+
+  <!-- Modal ingreso -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="color-orange close-button" data-bs-dismiss="modal" aria-label="Close">X</button>
+          <h2 class="color-orange text-decoration-underline">Ingreso del Usuario</h2>
+          <p class="fs-5 text-center mx-5">Si usted ya tiene una cuenta dentro de la página siga los siguientes pasos pero si apun no crea su perfil presione el botón de registro</p>
+          <form action="profile.php" method="post" class="d-grid">
+            <label for="nombre" class="color-green fs-5 mb-3">Nombre o correo:</label>
+            <input type="text" class="bg-input-orange border-0 p-2 me-2 w-100 mb-3" placeholder="Nombre o correo">
+            <label for="Contraseña" class="color-green fs-5 mb-3">Contraseña:</label>
+            <input type="password" class="bg-input-grey border-0 p-2 mb-3 w-50" placeholder="Contraseña">
+            <div class="d-flex justify-content-center mt-5">
+              <button class="border-0 rounded p-2 px-4 text-white bg-orange me-2" type="submit">Aceptar</button>
+              <button class="border-0 rounded p-2 px-4 text-white bg-olive ms-2" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal ingreso -->
 
   <!-- AOS Animation -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

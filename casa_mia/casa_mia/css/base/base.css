@@ -371,6 +371,14 @@
      background: #F7A846EB;
  }
 
+ .bg-input-orange {
+     background: #F8A43B94;
+ }
+
+ .bg-input-grey {
+     background: #716C6761;
+ }
+
  .bg-olive {
      background: #716C6799;
  }
@@ -401,10 +409,10 @@
 
  /* Medium devices (tablets, less than 992px) */
  @media (max-width: 991.98px) {
-    .img-fluid{
-        min-width: 290px;
-        max-height: 265px;
-    }
+     .img-fluid {
+         min-width: 290px;
+         max-height: 265px;
+     }
 
      .card-size-top-10 {
          width: 103%;
