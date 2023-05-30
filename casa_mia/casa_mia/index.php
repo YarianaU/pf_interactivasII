@@ -399,7 +399,10 @@
             <label for="nombre" class="color-green fs-5 mb-3">Nombre o correo:</label>
             <input type="text" class="bg-input-orange border-0 p-2 me-2 w-100 mb-3" placeholder="Nombre o correo">
             <label for="Contraseña" class="color-green fs-5 mb-3">Contraseña:</label>
-            <input type="password" class="bg-input-grey border-0 p-2 mb-3 w-50" placeholder="Contraseña">
+            <div>
+              <input type="password" class="bg-input-grey border-0 p-2 mb-3 w-50" placeholder="Contraseña">
+              <button type="button" class="border-0 rounded p-2 px-4 text-white color-light ms-2" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#changeModal">Cambio de contraseña</button>
+            </div>
             <div class="d-flex justify-content-center mt-5">
               <button class="border-0 rounded p-2 px-4 text-white bg-orange me-2" type="submit">Aceptar</button>
               <button class="border-0 rounded p-2 px-4 text-white bg-olive ms-2" data-bs-dismiss="modal">Cancelar</button>
@@ -410,6 +413,34 @@
     </div>
   </div>
   <!-- Modal ingreso -->
+
+  <!-- Modal cambio -->
+  <div class="modal fade" id="changeModal" tabindex="-1" aria-labelledby="changeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="color-orange close-button" data-bs-dismiss="modal" aria-label="Close">X</button>
+          <h2 class="color-orange text-decoration-underline">Cambio de Contraseña</h2>
+          <p class="fs-5 text-center mx-5">Si usted no tiene una cuenta dentro de la página solo siga los siguientes pasos pero si ya tiene una cuenta presione el botón de ingreso</p>
+          <form action="" method="post" class="d-grid">
+            <label for="nombre" class="color-green fs-5 mb-3">Correo:</label>
+            <input type="email" class="bg-input-orange border-0 p-2 me-2 w-100 mb-3" placeholder="Correo">
+            <label for="Contraseña" class="color-green fs-5 mb-3">Codigo:</label>
+            <input type="text" class="bg-input-grey border-0 p-2 mb-3 w-50" placeholder="_ _ _ _">
+            <label for="Contraseña" class="color-green fs-5 mb-3">Cambio de contraseña:</label>
+            <input type="password" class="bg-input-orange border-0 p-2 mb-3 w-50" placeholder="Contraseña">
+            <label for="Contraseña" class="color-green fs-5 mb-3">Repetir contraseña:</label>
+            <input type="password" class="bg-input-grey border-0 p-2 mb-3 w-50" placeholder="Contraseña">
+            <div class="d-flex justify-content-center mt-5">
+              <button class="border-0 rounded p-2 px-4 text-white bg-orange me-2" type="submit">Aceptar</button>
+              <button class="border-0 rounded p-2 px-4 text-white bg-olive ms-2" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal cambio -->
 
   <!-- AOS Animation -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
