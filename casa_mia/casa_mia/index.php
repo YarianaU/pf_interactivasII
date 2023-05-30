@@ -33,8 +33,8 @@
       <!-- <img class="mobile-icon" src="./icons/bars.svg" alt="menu bar"> -->
       <span class="logo">CASA MIA!</span>
       <div>
-        <button class="header-button bg-orange">REGISTRO</button>
-        <button class="header-button bg-olive">INGRESO</button>
+        <button class="header-button bg-orange" data-bs-toggle="modal" data-bs-target="#registerModal">REGISTRO</button>
+        <button class="header-button bg-olive" data-bs-toggle="modal" data-bs-target="#loginModal">INGRESO</button>
       </div>
     </div>
     <!--  Menu navigation -->
@@ -372,7 +372,7 @@
             </div>
             <label for="correo" class="color-green fs-5 mb-3">Correo:</label>
             <input type="email" class="bg-input-grey border-0 p-2 mb-3" placeholder="Correo">
-            <label for="Contraseña" class="color-green fs-5 mb-3">Correo:</label>
+            <label for="Contraseña" class="color-green fs-5 mb-3">Contraseña:</label>
             <input type="password" class="bg-input-orange border-0 p-2 w-50 mb-3" placeholder="Contraseña">
             <label for="Contraseña" class="color-green fs-5 mb-3">Repetir contraseña:</label>
             <input type="password" class="bg-input-grey border-0 p-2 mb-3 w-50" placeholder="Contraseña">

@@ -390,6 +390,10 @@
      font-size: large;
  }
 
+ .circle{
+    padding-top: 50%;
+ }
+
 
  /* Large devices (desktops, more than 1200px) */
  @media (min-width: 1199.99px) {
